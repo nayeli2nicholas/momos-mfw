@@ -8,19 +8,23 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Permanent+Marker&family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 
     <title> Momo's Korean Fried Chicken </title>
 </head>
 
 <body>  <!--- start of body -->
-<nav class="navbar navbar-expand-lg bg-#fff navbar-#fff">
+<nav class="navbar navbar-expand-lg bg-#fff navbar-#fff py-3">
 <div class="container fluid">
     <a href="index.html" class="navbar-brand">
         <img src="img/momoicon1.png" alt="Momo's Icon" width="100" height="80" class=“d-inline-block>
     </a>
 
-    <button type="button" class="btn btn-danger ms-auto"> Order Now </button>
+    <button type="button" class="btn btn-danger ms-auto"><a href="#"> Order Now </a></button>
 
     <button type="button" class="navbar-toggler" data-bs-toggle=“collapse” data-bs-target=“#menu” aria-controls=“navbarNav” aria-label="toggle navigation" aria-expanded="false">
         <span class="navbar-toggler-icon"></span>
@@ -31,9 +35,9 @@
             <li class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false"> MENU </a>
                 <ul class="dropdown-menu">
-                    <li><a href="#" class="dropdown-item"> View Online Menu </a></li>
-                    <li><a href="#" class="dropdown-item"> About Momo's </a></li>
-                    <li><a href="#" class="dropdown-item"> Contact Us </a></li>
+                    <li><a href="menu.html" class="dropdown-item"> View Online Menu </a></li>
+                    <li><a href="#" class="dropdown-item"> Locations/Hours </a></li>
+                    <li><a href="contact.html" class="dropdown-item"> Contact Us </a></li>
                 </ul>
             </li>
         </ul>
@@ -42,7 +46,7 @@
 </nav>
 
 <section class="bg-dark pt-5">
-        <div>
+        <div class="d-sm-block">
             <div id="carouselExampleCaptions" class="carousel slide container" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -54,32 +58,32 @@
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="./img/chicken10.jpg" class="d-block w-100 img-fluid" z-index="30" alt="img">
+                    <img src="./img/chicken10.jpg" class="d-sm-block w-100 img-fluid" z-index="30" alt="img">
                     <div class="carousel-caption d-none d-md-block">
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <img src="./img/chicken9.jpg" class="d-block w-100 img-fluid" z-index="30" alt="img">
+                    <img src="./img/chicken9.jpg" class="d-sm-block w-100 img-fluid" z-index="30" alt="img">
                     <div class="carousel-caption d-none d-md-block">
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <img src="./img/chicken11.jpg" class="d-block w-100 img-fluid" z-index="30" alt="img">
+                    <img src="./img/chicken11.jpg" class="d-sm-block w-100 img-fluid" z-index="30" alt="img">
                     <div class="carousel-caption d-none d-md-block">
                     </div>
                   </div>  
                   <div class="carousel-item">
-                    <img src="./img/chicken6.jpg" class="d-block w-100 img-fluid" z-index="30" alt="img">
+                    <img src="./img/chicken6.jpg" class="d-sm-block w-100 img-fluid" z-index="30" alt="img">
                     <div class="carousel-caption d-none d-md-block">
                     </div>
                   </div>  
                   <div class="carousel-item">
-                    <img src="./img/chicken5.jpeg" class="d-block w-100 img-fluid" z-index="30" alt="img">
+                    <img src="./img/chicken5.jpeg" class="d-sm-block w-100 img-fluid" z-index="30" alt="img">
                     <div class="carousel-caption d-none d-md-block">
                     </div>
                   </div>  
                   <div class="carousel-item">
-                    <img src="./img/chicken3.jpg" class="d-block w-100 img-fluid" z-index="30" alt="img">
+                    <img src="./img/chicken3.jpg" class="d-sm-block w-100 img-fluid" z-index="30" alt="img">
                     <div class="carousel-caption d-none d-md-block">
                     </div>
                   </div>
@@ -96,7 +100,82 @@
         </div>
 </section>
 
+<!-- Start Online Order -->
+<section class="bg-danger text-light p-5"> <!-- when adding responsive padding for sm screen, code not responsive??-->
+    <div class="container">
+        <div class="d-md-flex justify-content-between align-items-center">
+            <h3 class="mb-3 mb-md-0"> Start Your Online Order </h3> <!-- ex. of one google font -->
 
+            <button type="button" class="btn btn-light btn-lg ms-auto"><a href="#" class="order"> Order Now </a></button>
+        </div>
+    </div>
+</section>
+
+<section> 
+    <h1 class="pt-5 pb-5 display-1"> Hey there! </h1> <!-- ex. of second google font-->
+</section>
+
+<div>
+    <p class="lead"> At Momo's we're dedicated to serving you top of the notch crunch you can see, taste, hear, smell... you name it! </p>
+</div>
+
+<!-- box grid links -->
+<section class="p-5">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md"> 
+                <div class="card bg-danger text-light"> 
+                    <div class="card-body text-light">
+                        <div class="h1 mb-3">
+                            <i class="bi bi-cart"></i>
+                        </div>
+                        <h3 class="card-title mb-2"> <a href="/menu.html">Online Menu </a> </h3>
+                        <p class="card-text pb-5"> One bite closer! </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card bgg text-light"> 
+                    <div class="card-body text-center">
+                        <div class="h1 mb-3">
+                            <i class="bi bi-clock"></i>
+                        </div>
+                        <h3 class="card-title mb-2"> <a href="#"> Locations/Hours </a> </h3>
+                        <p class="card-text pb-5"> Don't just think about it, come get it! </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card bg-danger text-light"> 
+                    <div class="card-body text-center">
+                        <div class="h1 mb-3">
+                            <i class="bi bi-chat"></i>
+                        </div>
+                        <h3 class="card-title mb-2"> <a href="/contact.html"> Contact Us </a></h3>
+                        <p class="card-text pb-5"> Keep in touch with us, we love to hear from you. </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section p-5>
+    <h1 class="pt-5 pb-5 display-1"> The Momo Mission </h1>
+    <p class="container"> Momo's was originally founded in 1995 in Los Angeles, CA by first generation Kim Park, with the help of her parents. <br>
+        Kim's father always referred to her as “Momo” which translates to peaches; peaches were his favorite and so was Kim. <br>
+        Kim's father became terminally ill with cancer when she was 19, and shortly two years after his diagnosis, he had passed away in 2002. <br>
+        Kim and her mother grieved and struggled through their loss. Momo's had met its end. <br>
+        Kim and her mother gave themselves a fresh start by moving north of California. <br>
+        Here is where she decided to continue to live out her father's dreams and opened up Momo's Korean Fried Chicken. <br>
+        It was a hard leap of faith for Kim and her mother and the community met them with the strongest embrace! Since then, the rest was history. <br>
+        Kim now spends most of her time taking care of her elder mother, and providing her communities with real food, real chicken, made with real love! <br>
+        Going strong on 10+ years of business, we are dedicated to bringing the comfort of food to you. <br>
+        Made with real love.
+    </p>
+
+</section>
 
 <!-- Bootstrap -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
